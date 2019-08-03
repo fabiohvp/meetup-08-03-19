@@ -55,3 +55,27 @@ export default App;
 
 11 - tailwind?
 https://blog.logrocket.com/create-react-app-and-tailwindcss/
+scritps:
+    "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css",
+    "start": "react-scripts start",
+  
+Alterar Body.tsx para
+import React from "react";
+
+const Body = ({ name }) => {
+  return (
+    <div className="flex items-center justify-center h-screen">
+      <div className="bg-indigo-800 text-black font-bold rounded-lg border shadow-lg p-10">
+        <input
+          className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+          type="email"
+          placeholder="jane@example.com"
+          defaultValue={name}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Body;
+
