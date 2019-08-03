@@ -10,7 +10,9 @@ https://tableless.com.br/entendendo-o-dom-document-object-model/
 5 - operadores (rest, spread, destructuring)
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribuicao_via_desestruturacao
 
-6 - criando projeto react
+6 - o que é SPA
+6.1 - react, vuejs, angular, svelte, o que são e para que servem?
+6.2 - criando projeto react
 https://facebook.github.io/create-react-app/docs/adding-typescript
 
 7 - npm/yarn (dependencies/dev-dependencies)
