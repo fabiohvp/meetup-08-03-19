@@ -1,0 +1,54 @@
+1 - árvore dom
+https://tableless.com.br/entendendo-o-dom-document-object-model/
+
+2 - exemplos de seletores css/jquery
+
+3 - tipos no javascript
+
+4 - imutabilidade e detecção de mudança
+
+5 - operadores (rest, spread, destructuring)
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Atribuicao_via_desestruturacao
+
+6 - git clone
+
+7 - criando projeto react
+https://facebook.github.io/create-react-app/docs/adding-typescript
+
+8 - npm/yarn (dependencies/dev-dependencies)
+adicionar material-ui
+https://material-ui.com/
+
+9 - primeiro component
+abrir o arquivo App.tsx e apagar o conteudo dentro da div "App"
+criar pasta components
+criar arquivo Body.tsx
+explicar como funciona props e criar o componente abaixo
+
+import React from "react";
+
+const Body = ({ name }) => {
+  return <p>{name}</p>;
+};
+
+export default Body;
+
+no App.tsx 
+
+import "./App.css";
+
+import Body from "./components/Body";
+import Container from "@material-ui/core/Container";
+import React from "react";
+
+const App: React.FC = () => {
+  return (
+    <Container maxWidth="sm">
+      <Body name="Test" />
+    </Container>
+  );
+};
+
+export default App;
+
+10 - mostrar como usar os components do material-ui
